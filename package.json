@@ -1,0 +1,43 @@
+{
+  "name": "appointment-schedule",
+  "version": "0.1.0",
+  "bin": {
+    "appointment-schedule": "bin/appointment-schedule.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.119.0",
+    "@types/node": "16.7.1",
+    "aws-cdk": "^1.119.0",
+    "esbuild": "0",
+    "ts-node": "^10.2.1",
+    "typescript": "~4.3.5"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-amplify": "^1.119.0",
+    "@aws-cdk/aws-appsync": "^1.119.0",
+    "@aws-cdk/aws-codebuild": "^1.119.0",
+    "@aws-cdk/aws-dynamodb": "^1.119.0",
+    "@aws-cdk/aws-iam": "^1.119.0",
+    "@aws-cdk/aws-lambda": "^1.119.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.119.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.119.0",
+    "@aws-cdk/aws-s3": "^1.119.0",
+    "@aws-cdk/aws-s3-deployment": "^1.119.0",
+    "@aws-cdk/aws-s3-notifications": "^1.119.0",
+    "@aws-cdk/core": "^1.119.0",
+    "@aws-cdk/custom-resources": "^1.119.0",
+    "appointment-schedule": "./",
+    "axios": "^0.21.1",
+    "cdk-ec2-key-pair": "^2.2.1",
+    "follow-redirects": "^1.14.2",
+    "graphql": "^15.5.1",
+    "graphql-tag": "^2.12.5",
+    "source-map-support": "^0.5.19",
+    "uuid": "^8.3.2"
+  }
+}

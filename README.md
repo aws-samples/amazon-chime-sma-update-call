@@ -1,8 +1,8 @@
-# Update Amazon Chime SIP Media Application Call Demo
+# Updating an In-Progress Amazon Chime SIP Media Application Call
 
 This demo will build and configure several services within AWS so that you can create an SMA Phone Number that is able to join to a Chime SDK Meeting.  A separate client can be used to make changes to the meeting using the UpdateSipMediaApplicationCall API.
 ## Overview
-![Overview](images/Overview.png)
+![Overview](images/SMA-Update-Overview.png)
 
 ## Requirements
 - node V12+/npm [installed](https://www.npmjs.com/get-npm)
@@ -17,8 +17,8 @@ This demo will build and configure several services within AWS so that you can c
 - Deployment must be done in us-east-1 or us-west-2 to align with SIP media application resources
   
 ## Deployment
-- Clone this repo: `git clone ENTER_REPO_NAME`
-- `cd REPO_NAME`
+- Clone this repo: `git clone https://github.com/aws-samples/amazon-chime-sma-update-call`
+- `cd amazon-chime-sma-update-call`
 - `./deploy.sh`
 - Accept prompts for CDK deployment
 ### Local client
@@ -42,6 +42,8 @@ This deployment will build everything required to see Amazon Chime SIP media app
 - wav_files\\* - wav files uploaded to outgoingWav bucket for use with SMA
 
 ## How It Works
+
+Amazon Chime SIP media application can be used with and without Amazon Chime SDK Meetings.  In this demonstration, we will be using it with an Amazon Chime SDK Meeting, but a similar demonstration could be constructed with a PSTN call using the [CallAndBridge](https://docs.aws.amazon.com/chime/latest/dg/call-and-bridge.html) action.  
 
 ![Process](images/Update_Process.png)
 

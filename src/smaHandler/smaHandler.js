@@ -45,7 +45,7 @@ exports.handler = async(event, context, callback) => {
         default:
             // Action unsuccessful or unknown event recieved
             console.log("FAILED ACTION");
-            actions = [hangupAction];
+            actions = [];
     }
 
     const response = {
@@ -61,6 +61,10 @@ exports.handler = async(event, context, callback) => {
 // New call handler
 async function newCall(event) {
     // Play a welcome message after answering the call, play a prompt and gather DTMF tones
+    const callId = event.CallDetails.Participants[0].CallId;
+
+    playAudioAction.Parameters.CallId = callId
+    playAudioAndGetDigitsAction.Parameters.CallId = callId
     playAudioAction.Parameters.AudioSource.Key = "welcome-message.wav";
     return [pauseAction, playAudioAction, playAudioAndGetDigitsAction];
 }
@@ -164,6 +168,7 @@ async function actionSuccessful(event) {
             console.log("Join meeting successful");
 
             // Play meeting joined and register for dtmf
+            playAudioAction.Parameters.CallId = callId
             playAudioAction.Parameters.AudioSource.Key = "meeting-joined.wav";
             return [receiveDigitsAction, playAudioAction];
 
@@ -174,10 +179,12 @@ async function actionSuccessful(event) {
                     
                     if (event.ActionData.Parameters.AttendeeList.includes(a[0].attendeeId.S)) {
                         // Mute
+                        playAudioAction.Parameters.CallId = callId
                         playAudioAction.Parameters.AudioSource.Key = "muted.wav";
                     }
                     else {
                         // Mute All
+                        playAudioAction.Parameters.CallId = callId                        
                         playAudioAction.Parameters.AudioSource.Key = "muted-all.wav";
                     }
                     return [playAudioAction];
@@ -186,10 +193,12 @@ async function actionSuccessful(event) {
                     var a = await getAttendeeInfo(fromNumber, callId);
                     if (event.ActionData.Parameters.AttendeeList.includes(a[0].attendeeId.S)) {
                         // Unmute
+                        playAudioAction.Parameters.CallId = callId                        
                         playAudioAction.Parameters.AudioSource.Key = "unmuted.wav";
                     }
                     else {
                         // Unmute All
+                        playAudioAction.Parameters.CallId = callId                        
                         playAudioAction.Parameters.AudioSource.Key = "unmuted-all.wav";
                     }
 
@@ -203,6 +212,7 @@ async function actionSuccessful(event) {
             return [];
 
         default:
+            playAudioAndGetDigitsAction.Parameters.CallId = callId            
             return [playAudioAndGetDigitsAction];
     }
 }
@@ -214,6 +224,7 @@ async function updateAction(event) {
     console.log(newAction)
     switch (newAction) {
         case "PlayAudio":
+            playAudioAction.Parameters.CallId = callId            
             playAudioAction.Parameters.AudioSource.Key = "updated.wav";
              return [playAudioAction]
              
@@ -362,7 +373,7 @@ const hangupAction = {
 const playAudioAction = {
     "Type": "PlayAudio",
     "Parameters": {
-        "ParticipantTag": "LEG-A",
+        "CallId": "",        
         "AudioSource": {
             "Type": "S3",
             "BucketName": process.env.BUCKET_NAME,
@@ -374,6 +385,7 @@ const playAudioAction = {
 const playAudioAndGetDigitsAction = {
     "Type": "PlayAudioAndGetDigits",
     "Parameters": {
+        "CallId": "",        
         "MinNumberOfDigits": 5,
         "MaxNumberOfDigits": 5,
         "Repeat": 3,

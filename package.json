@@ -32,7 +32,7 @@
     "@aws-cdk/core": "^1.119.0",
     "@aws-cdk/custom-resources": "^1.119.0",
     "appointment-schedule": "./",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "cdk-ec2-key-pair": "^2.2.1",
     "follow-redirects": "^1.14.8",
     "graphql": "^15.5.1",

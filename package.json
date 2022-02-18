@@ -34,7 +34,7 @@
     "appointment-schedule": "./",
     "axios": "^0.21.1",
     "cdk-ec2-key-pair": "^2.2.1",
-    "follow-redirects": "^1.14.2",
+    "follow-redirects": "^1.14.8",
     "graphql": "^15.5.1",
     "graphql-tag": "^2.12.5",
     "source-map-support": "^0.5.19",

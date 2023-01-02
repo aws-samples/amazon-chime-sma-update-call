@@ -1577,10 +1577,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-amazon-chime-resources@^0.1.189:
-  version "0.1.189"
-  resolved "https://registry.yarnpkg.com/cdk-amazon-chime-resources/-/cdk-amazon-chime-resources-0.1.189.tgz#eb1757cac77889b8754df812b0d074fe387de568"
-  integrity sha512-LyCJMhlguNyePplvurAeyyniw3Gm6Lx0demPr5kIl6ktqWI9sFiRPpr4z5ka1dxmo+fkfezRzqaUXmI/LjM2lA==
+cdk-amazon-chime-resources@^0.1.190:
+  version "0.1.190"
+  resolved "https://registry.yarnpkg.com/cdk-amazon-chime-resources/-/cdk-amazon-chime-resources-0.1.190.tgz#4525de6ce56a57da4ac35bb4d733cb026ea22dcf"
+  integrity sha512-b+cXE4bsZki2ZmX8gdFVkk8lYjgP/7G6lCdCm7tlO6Du3BgXL9mCx0RZlxBR0wMsVvLppJNuLDilELN+shNKzA==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -4272,10 +4272,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.78:
-  version "0.65.78"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.78.tgz#68b879bfc00284f9e38855ff8da8f3ac4c0bf5a0"
-  integrity sha512-/vTVGMWT5kNdgAhPVy3Ye4+xIDXfl9wvwm+oTKtRPFQc17OC4JWdXVBw+PtmmlZ4o/a6Ho+JQ1e62BzLOGziuQ==
+projen@^0.65.79:
+  version "0.65.79"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.79.tgz#597b3570e16ae9d33c2dbc144688cc1341043fca"
+  integrity sha512-MSnSYmDWP+A4SfRb4j5+ssTnfsrwzXOCKaR6XvsutF8NyilQgmDPZ/0YA5UT594hU4Ei1O3vNy+/yXRWX7h6qg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"

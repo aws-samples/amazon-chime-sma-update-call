@@ -6,6 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   deps: ['fs-extra', '@types/fs-extra', 'cdk-amazon-chime-resources'],
   appEntrypoint: 'amazon-chime-sma-update-call.ts',
   devDeps: ['esbuild'],
+  workflowNodeVersion: '16.x',
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['schuettc'],

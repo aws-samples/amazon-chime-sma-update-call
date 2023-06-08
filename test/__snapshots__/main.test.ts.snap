@@ -168,7 +168,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "0e38c73676c042efb04d698981ab7a9706991a146e59250a537916db0e9bde39.zip",
+          "S3Key": "88b83f5f61fe6f85ffcd0a37a09a8f3be90e7c090964b0b62b062eb8a5a1a3a7.zip",
         },
         "Description": "/opt/awscli/aws",
       },
@@ -1388,7 +1388,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "0e38c73676c042efb04d698981ab7a9706991a146e59250a537916db0e9bde39.zip",
+          "S3Key": "88b83f5f61fe6f85ffcd0a37a09a8f3be90e7c090964b0b62b062eb8a5a1a3a7.zip",
         },
         "Description": "/opt/awscli/aws",
       },
@@ -1619,7 +1619,7 @@ exports[`Snapshot 1`] = `
       "Type": "AWS::IAM::Role",
       "UpdateReplacePolicy": "Retain",
     },
-    "infrastructureChimeSDKPSTNAudioUpdateDeployment1EBE23386a54853917d75573d7140269de2f4a01": {
+    "infrastructureChimeSDKPSTNAudioUpdateDeployment1EBE23388fc624619c7b98eec95f58a0dd7babd7": {
       "DependsOn": [
         "infrastructureChimeSDKPSTNAudioUpdateOPTIONS59A04900",
         "infrastructureChimeSDKPSTNAudioUpdatequeryMeetingsOPTIONS60CC2D51",
@@ -1646,7 +1646,7 @@ exports[`Snapshot 1`] = `
       ],
       "Properties": {
         "DeploymentId": {
-          "Ref": "infrastructureChimeSDKPSTNAudioUpdateDeployment1EBE23386a54853917d75573d7140269de2f4a01",
+          "Ref": "infrastructureChimeSDKPSTNAudioUpdateDeployment1EBE23388fc624619c7b98eec95f58a0dd7babd7",
         },
         "MethodSettings": [
           {
@@ -1665,6 +1665,7 @@ exports[`Snapshot 1`] = `
     },
     "infrastructureChimeSDKPSTNAudioUpdateOPTIONS59A04900": {
       "Properties": {
+        "ApiKeyRequired": false,
         "AuthorizationType": "NONE",
         "HttpMethod": "OPTIONS",
         "Integration": {
@@ -1724,6 +1725,7 @@ exports[`Snapshot 1`] = `
     },
     "infrastructureChimeSDKPSTNAudioUpdatequeryMeetingsOPTIONS60CC2D51": {
       "Properties": {
+        "ApiKeyRequired": false,
         "AuthorizationType": "NONE",
         "HttpMethod": "OPTIONS",
         "Integration": {
@@ -1898,6 +1900,7 @@ exports[`Snapshot 1`] = `
     },
     "infrastructureChimeSDKPSTNAudioUpdateupdateCallNodeOPTIONS0D311FCB": {
       "Properties": {
+        "ApiKeyRequired": false,
         "AuthorizationType": "NONE",
         "HttpMethod": "OPTIONS",
         "Integration": {
@@ -2072,6 +2075,7 @@ exports[`Snapshot 1`] = `
     },
     "infrastructureChimeSDKPSTNAudioUpdateupdateCallPythonOPTIONS415172FD": {
       "Properties": {
+        "ApiKeyRequired": false,
         "AuthorizationType": "NONE",
         "HttpMethod": "OPTIONS",
         "Integration": {

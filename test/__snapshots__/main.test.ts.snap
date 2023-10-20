@@ -144,6 +144,7 @@ exports[`Snapshot 1`] = `
           "Statement": [
             {
               "Action": [
+                "s3:PutBucketPolicy",
                 "s3:GetBucket*",
                 "s3:List*",
                 "s3:DeleteObject*",
@@ -230,7 +231,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "f2d30cfc360482320a52a4fcde8a70f3569df79ab30be24650fda58eb60052cf.zip",
+          "S3Key": "7382a0addb9f34974a1ea6c6c9b063882af874828f366f5c93b2b7b64db15c94.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (test/Chime/phoneNumber/ChimePhoneNumber/PSTNResourceProvider)",
         "Environment": {
@@ -454,7 +455,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "f2d30cfc360482320a52a4fcde8a70f3569df79ab30be24650fda58eb60052cf.zip",
+          "S3Key": "7382a0addb9f34974a1ea6c6c9b063882af874828f366f5c93b2b7b64db15c94.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (test/Chime/sipMediaApp/sipMediaAppRequest/PSTNResourceProvider)",
         "Environment": {
@@ -589,7 +590,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "f2d30cfc360482320a52a4fcde8a70f3569df79ab30be24650fda58eb60052cf.zip",
+          "S3Key": "7382a0addb9f34974a1ea6c6c9b063882af874828f366f5c93b2b7b64db15c94.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (test/Chime/sipRule/sipRuleRequest/PSTNResourceProvider)",
         "Environment": {
@@ -1078,7 +1079,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "a657308e723bb9460b800cb3b47dadb74e28243edfe246bf7755c45ec312eb97.zip",
+          "S3Key": "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6.zip",
         },
         "Description": {
           "Fn::Join": [
@@ -1336,7 +1337,7 @@ exports[`Snapshot 1`] = `
           },
         ],
         "SourceObjectKeys": [
-          "9d4b0ad98eb466a75f88b36f0eb99a369a454592eff666ed0122a156d6453880.zip",
+          "21338e510f0a2d7c207c789a77cf4ad104410e58e65bc72b210a63874bd1ed28.zip",
           "54db0af5da74dab89a93c249167c5b162223925d4c9385ff9262a09b67c99244.zip",
         ],
       },
@@ -1388,6 +1389,7 @@ exports[`Snapshot 1`] = `
           "Statement": [
             {
               "Action": [
+                "s3:PutBucketPolicy",
                 "s3:GetBucket*",
                 "s3:List*",
                 "s3:DeleteObject*",
